@@ -4,6 +4,12 @@ spring:
     url: jdbc:mysql://47.112.249.227:3306/gulimall_ums?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
     username: root
     password: root
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 47.112.249.227:8848
+  application:
+    name: gulimall-member
 
 mybatis-plus:
   global-config:
