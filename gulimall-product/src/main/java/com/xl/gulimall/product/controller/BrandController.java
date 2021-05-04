@@ -15,6 +15,7 @@ import com.xl.gulimall.product.service.BrandService;
 import com.xl.common.utils.PageUtils;
 import com.xl.common.utils.R;
 
+import javax.validation.Valid;
 
 
 /**
@@ -58,7 +59,7 @@ public class BrandController {
      */
     @RequestMapping("/save")
     //@RequiresPermissions("product:brand:save")
-    public R save(@RequestBody BrandEntity brand){
+    public R save( @Valid @RequestBody BrandEntity brand){
 		brandService.save(brand);
 
         return R.ok();
