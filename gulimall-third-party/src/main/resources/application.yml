@@ -1,0 +1,29 @@
+server:
+  port: 30000
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 47.112.249.227:8848
+  application:
+    name: gulimall-third-party
+  servlet:
+    multipart:
+      max-file-size: 5MB # 限制文件上传大小
+fdfs:
+  so-timeout: 2500
+  connect-timeout: 600
+  thumb-image:
+    height: 60
+    width: 60
+  tracker-list:
+    - 47.112.249.227:22122
+
+ly:
+  upload:
+    baseURL: http://image.leyou/
+    allowTypes:
+      - image/png
+      - image/jpeg
+      - image/jpg
+      - image/bmp
